@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:text="돌아가기" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="12"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:layout_marginBottom="30px"
+            android:text="정류장 : "
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:privateImeOptions="defaultInputmode=korean" />
+
+        <Button
+            android:id="@+id/buttonSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30px"
+            android:layout_weight="1"
+            android:text="검색" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvHeadStationName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="정류장 이름"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvHeadStationID"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="정류장 ID"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvHeadSi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="시군구"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvHeadEup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="읍면동"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewSearch"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80" />
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="20"
+            android:text="추 가" />
+
+        <Spinner
+            android:id="@+id/spinnerBusStation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="80" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Button
+            android:id="@+id/buttonLocation"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="33"
+            android:text="정류장 위치" />
+
+        <Button
+            android:id="@+id/buttonRemove"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="33"
+            android:text="정류장 삭제" />
+
+        <Button
+            android:id="@+id/buttonAlarm"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="33"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="알람 확인" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/busListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80" />
+</LinearLayout>
